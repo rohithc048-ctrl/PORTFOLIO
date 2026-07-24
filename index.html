@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chintada Rohith | Aspiring AI & IoT Engineer Portfolio</title>
+  <meta name="description"
+    content="Official portfolio of Chintada Rohith - Aspiring AI Engineer specializing in LLMs, AI Agents & IoT. B-Tech ECE Student at Vishnu Institute of Technology (Class of 2028).">
+  <meta name="keywords"
+    content="Chintada Rohith, AI Engineer, LLM Developer, AI Agents, IoT, Arduino Nano, FastAPI, Gemini API, Python, C, HTML, CSS, Vishnu Institute of Technology">
+  <meta name="author" content="Chintada Rohith">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Cyber Emerald Canvas Background -->
+  <canvas id="cyber-canvas"></canvas>
+
+  <!-- Floating Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-symbol">CR</span> Chintada Rohith
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="https://github.com/rohithc048-ctrl" target="_blank" rel="noopener noreferrer"
+            class="btn btn-secondary" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
+            <svg class="brand-icon-svg" viewBox="0 0 24 24">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/rohith-chintada-80869435a" target="_blank" rel="noopener noreferrer"
+            class="btn btn-gold" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
+            <svg class="brand-icon-svg" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+      <button class="mobile-toggle" aria-label="Toggle navigation menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Available for AI & IoT Research Projects</span>
+        </div>
+
+        <!-- Dynamic Name Typing Animation -->
+        <h1 class="hero-title">
+          Hi, I'm <span id="typing-text" class="gradient-emerald-gold"></span><span class="typing-cursor">|</span>
+        </h1>
+
+        <h2 class="hero-headline">
+          Aspiring AI Engineer | Specializing in LLMs, AI Agents & IoT
+        </h2>
+        <p class="hero-bio">
+          Electronics & Communication Engineering student bridging software algorithms with physical hardware
+          engineering. Building intelligent conversational agents, FastAPI backends, and low-power IoT solutions.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-emerald">
+            <i data-lucide="folder-code"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i data-lucide="mail"></i> Contact Me
+          </a>
+          <a href="https://github.com/rohithc048-ctrl" target="_blank" rel="noopener noreferrer"
+            class="btn btn-secondary">
+            <svg class="brand-icon-svg" viewBox="0 0 24 24">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/rohith-chintada-80869435a" target="_blank" rel="noopener noreferrer"
+            class="btn btn-gold">
+            <svg class="brand-icon-svg" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">2028</span>
+            <span class="stat-label">ECE B-Tech Class</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">LLM & IoT</span>
+            <span class="stat-label">Core Specialization</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">Gemini API</span>
+            <span class="stat-label">Reasoning Engine</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- REVERTED RECTANGULAR CYBERNETIC PROFILE CONTAINER -->
+      <div class="hero-visual">
+        <div class="cyber-profile-container">
+          <img src="assets/images/rohith_profile.jpg" alt="Chintada Rohith Profile Picture">
+          <div class="cyber-profile-overlay"></div>
+          <div class="floating-profile-card">
+            <div class="card-icon">
+              <i data-lucide="cpu"></i>
+            </div>
+            <div class="card-info">
+              <h4>Chintada Rohith</h4>
+              <p>Vishnu Institute of Technology (ECE '28)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div style="text-align: center;" class="reveal">
+        <span class="section-tag"><i data-lucide="user"></i> Background</span>
+        <h2 class="section-title">About <span class="gradient-emerald-gold">Me</span></h2>
+        <p class="section-subtitle">Bridging algorithmic intelligence with embedded hardware engineering</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card about-card-large reveal">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary-emerald);">
+            Engineering Perspective & Vision
+          </h3>
+          <p class="about-text">
+            I am a B-Tech student in <strong>Electronics and Communication Engineering</strong> at <strong>Vishnu
+              Institute of Technology</strong> (Class of 2028).
+          </p>
+          <p class="about-text">
+            I am deeply passionate about Artificial Intelligence, Large Language Models (LLMs), and building intelligent
+            agents. My goal is to solve real-world problems by bridging software algorithms with hardware engineering.
+          </p>
+          <div class="highlight-box">
+            "Combining software intelligence with hardware innovation to engineer impactful real-world solutions."
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem;">
+            <a href="https://github.com/rohithc048-ctrl" target="_blank" rel="noopener noreferrer"
+              class="btn btn-secondary" style="padding: 0.5rem 1.1rem; font-size: 0.85rem;">
+              <svg class="brand-icon-svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg> GitHub Profile
+            </a>
+            <a href="https://www.linkedin.com/in/rohith-chintada-80869435a" target="_blank" rel="noopener noreferrer"
+              class="btn btn-gold" style="padding: 0.5rem 1.1rem; font-size: 0.85rem;">
+              <svg class="brand-icon-svg" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg> LinkedIn Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- Spotlight Photo Card -->
+        <div class="glass-card about-photo-card reveal">
+          <div class="about-photo-wrapper">
+            <img src="assets/images/rohith_profile.jpg" alt="Chintada Rohith Photo">
+          </div>
+          <h4 style="font-size: 1.25rem; color: var(--text-main); margin-bottom: 0.2rem;">Chintada Rohith</h4>
+          <p style="font-size: 0.88rem; color: var(--primary-emerald); font-family: var(--font-code);">AI & IoT Engineer
+            Aspirant</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="section" style="background: rgba(4, 8, 16, 0.4);">
+    <div class="container">
+      <div style="text-align: center;" class="reveal">
+        <span class="section-tag"><i data-lucide="code-2"></i> Skillset</span>
+        <h2 class="section-title">Technical <span class="gradient-emerald-gold">Skills</span></h2>
+        <p class="section-subtitle">Core foundation in programming languages and modern technical tools</p>
+      </div>
+
+      <div class="skills-container">
+        <!-- Programming Languages Card -->
+        <div class="glass-card reveal">
+          <h3 class="skill-group-title">
+            <i data-lucide="terminal"></i> Languages
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-name"><i data-lucide="layout" style="color: var(--accent-gold);"></i> HTML /
+                  CSS</span>
+                <span class="skill-level-badge">Proficient</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="75%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-name"><i data-lucide="file-code" style="color: var(--primary-emerald);"></i>
+                  Python</span>
+                <span class="skill-level-badge">Basics</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Technologies Card -->
+        <div class="glass-card reveal">
+          <h3 class="skill-group-title">
+            <i data-lucide="boxes"></i> Tools & Ecosystem
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.2rem;">
+            Core technologies, cloud APIs, microcontrollers, and agentic platforms utilized in projects:
+          </p>
+          <div class="tech-chips">
+            <span class="chip"><svg class="brand-icon-svg" style="color: var(--primary-emerald);" viewBox="0 0 24 24">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg> GitHub</span>
+            <span class="chip"><i data-lucide="rocket" style="color: #ec4899;"></i> Antigravity</span>
+            <span class="chip"><i data-lucide="sparkles" style="color: var(--accent-gold);"></i> Gemini API</span>
+            <span class="chip"><i data-lucide="zap" style="color: var(--primary-emerald);"></i> FastAPI</span>
+            <span class="chip"><i data-lucide="cpu" style="color: #38bdf8;"></i> IoT (Arduino Nano)</span>
+            <span class="chip"><i data-lucide="activity" style="color: var(--primary-emerald);"></i> PIR & LDR
+              Sensors</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div style="text-align: center;" class="reveal">
+        <span class="section-tag"><i data-lucide="briefcase"></i> Experience</span>
+        <h2 class="section-title">Practical <span class="gradient-emerald-gold">Experience</span></h2>
+        <p class="section-subtitle">Departmental R&D, adaptive platforms, and embedded IoT development</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Experience Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <div class="glass-card exp-card">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">ECE Department, Vishnu Institute of Technology</h3>
+                  <div class="exp-company">Research & Development Team Member</div>
+                </div>
+                <span class="exp-date">2025 – Present • Bhimavaram, India</span>
+              </div>
+              <ul class="exp-bullet-list">
+                <li>Designed and developed AI and IoT-based solutions as part of academic research and engineering
+                  projects.</li>
+                <li>Collaborated with team members to analyze real-world engineering problems and develop innovative
+                  hardware and software solutions.</li>
+                <li>Applied machine learning, embedded systems, IoT technologies, and data analysis to build intelligent
+                  prototypes.</li>
+                <li>Presented technical project demonstrations and documentation during departmental reviews and
+                  technical events.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <div class="glass-card exp-card">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">Mind Pilot - AI Based Study Mentor</h3>
+                  <div class="exp-company">AI/ML Developer</div>
+                </div>
+                <span class="exp-date">2026 • Bhimavaram, AP</span>
+              </div>
+              <ul class="exp-bullet-list">
+                <li>An adaptive learning platform that acts as a virtual study mentor by adjusting to a user’s unique
+                  learning pace and style.</li>
+                <li>Built the core application and logic focusing on a smooth, responsive experience for students
+                  managing their coursework.</li>
+                <li>Designed features that track progress and automatically adapt study schedules, helping users easily
+                  identify their weak spots and study more effectively.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <div class="glass-card exp-card">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">Smart Adaptive Street Lighting With Ambient & Motion Sensing</h3>
+                  <div class="exp-company">IoT Developer</div>
+                </div>
+                <span class="exp-date">2026 • Bhimavaram, AP</span>
+              </div>
+              <ul class="exp-bullet-list">
+                <li>Developed an IoT-based Smart Adaptive Street Lighting prototype that responds to both ambient light
+                  and nearby motion using Arduino Nano.</li>
+                <li>Combined PIR and LDR sensors to create an intelligent lighting system that switches on only when
+                  required, helping reduce energy consumption.</li>
+                <li>Assembled, programmed, and tested the complete hardware setup using Arduino Nano, LEDs, resistors,
+                  and sensors, ensuring smooth real-time operation.</li>
+                <li>Improved energy efficiency by ensuring lights operate only when motion is detected in low-light
+                  environments.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section" style="background: rgba(4, 8, 16, 0.5);">
+    <div class="container">
+      <div style="text-align: center;" class="reveal">
+        <span class="section-tag"><i data-lucide="cpu"></i> Innovations</span>
+        <h2 class="section-title">Featured <span class="gradient-emerald-gold">Projects</span></h2>
+        <p class="section-subtitle">Real-world AI agents, backend architectures, and IoT hardware prototypes</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Carrot Bot -->
+        <div class="glass-card project-card reveal">
+          <div class="project-image-wrapper">
+            <img src="assets/images/carrot_bot.png" alt="Carrot Bot Conversational Agent">
+            <span class="project-tag-overlay">Conversational Agent</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Carrot Bot</h3>
+            <ul class="project-bullet-list">
+              <li>A conversational AI agent specifically designed to engage users in witty, humorous banter.</li>
+              <li>Chat logic uses Gemini API to process inputs and generate funny, context-aware responses in real time.
+              </li>
+              <li>Fine-tuned personality and prompt structure for natural-sounding chat interactions.</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Gemini API</span>
+              <span class="tech-tag">AI Agent</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/rohithc048-ctrl" target="_blank" rel="noopener noreferrer"
+                class="btn btn-emerald" style="padding: 0.5rem 1.1rem; font-size: 0.85rem; width: 100%;">
+                <svg class="brand-icon-svg" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg> View GitHub Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Old Monck AI -->
+        <div class="glass-card project-card reveal">
+          <div class="project-image-wrapper">
+            <img src="assets/images/old_monck_ai.png" alt="Old Monck AI Interface">
+            <span class="project-tag-overlay">LLM Reasoning Engine</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Old Monck AI</h3>
+            <ul class="project-bullet-list">
+              <li>High-performance AI tool built with Python and FastAPI that delivers accurate, real-time answers.</li>
+              <li>Integrated Gemini API as the core reasoning engine, ensuring highly relevant and up-to-date
+                information.</li>
+              <li>Lightweight backend architecture to efficiently process queries and securely handle API keys.</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Gemini API</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Git</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/rohithc048-ctrl" target="_blank" rel="noopener noreferrer"
+                class="btn btn-emerald" style="padding: 0.5rem 1.1rem; font-size: 0.85rem; width: 100%;">
+                <svg class="brand-icon-svg" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg> View GitHub Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Smart Adaptive Street Lighting -->
+        <div class="glass-card project-card reveal">
+          <div class="project-image-wrapper">
+            <img src="assets/images/smart_lighting.png" alt="Smart Adaptive Street Lighting IoT">
+            <span class="project-tag-overlay">IoT System</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Smart Adaptive Street Lighting</h3>
+            <ul class="project-bullet-list">
+              <li>IoT-based Smart Adaptive Street Lighting prototype responding to ambient light and nearby motion.</li>
+              <li>Combined PIR and LDR sensors for intelligent lighting switching on only when required.</li>
+              <li>Hardware setup with Arduino Nano, LEDs, resistors, and sensors ensuring energy efficiency.</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">Arduino Nano</span>
+              <span class="tech-tag">PIR Sensor</span>
+              <span class="tech-tag">LDR Sensor</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/rohithc048-ctrl" target="_blank" rel="noopener noreferrer"
+                class="btn btn-secondary" style="padding: 0.5rem 1.1rem; font-size: 0.85rem; width: 100%;">
+                <svg class="brand-icon-svg" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg> View Project Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Mind Pilot -->
+        <div class="glass-card project-card reveal">
+          <div class="project-image-wrapper">
+            <img src="assets/images/mind_pilot.png" alt="Mind Pilot Adaptive Learning Mentor">
+            <span class="project-tag-overlay">Adaptive EdTech</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Mind Pilot Study Mentor</h3>
+            <ul class="project-bullet-list">
+              <li>Adaptive learning platform acting as a virtual study mentor by adjusting to user learning pace.</li>
+              <li>Tracks student progress and automatically adapts study schedules to identify weak spots.</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">Adaptive Logic</span>
+              <span class="tech-tag">Study Mentor</span>
+              <span class="tech-tag">EdTech</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/rohithc048-ctrl" target="_blank" rel="noopener noreferrer"
+                class="btn btn-secondary" style="padding: 0.5rem 1.1rem; font-size: 0.85rem; width: 100%;">
+                <svg class="brand-icon-svg" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg> View Code & Documentation
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION (PLACED BELOW PROJECTS & EXPERIENCE) -->
+  <section id="education" class="section" style="background: rgba(4, 8, 16, 0.4);">
+    <div class="container">
+      <div style="text-align: center;" class="reveal">
+        <span class="section-tag"><i data-lucide="graduation-cap"></i> Academic Background</span>
+        <h2 class="section-title">Education <span class="gradient-emerald-gold">Qualifications</span></h2>
+        <p class="section-subtitle">Formal degree studies and higher secondary academic milestones</p>
+      </div>
+
+      <div class="education-grid">
+        <!-- Education Item 1 -->
+        <div class="glass-card edu-card reveal">
+          <div>
+            <div class="edu-icon-badge">
+              <i data-lucide="building-2"></i>
+            </div>
+            <h3 class="edu-institution">Vishnu Institute Of Technology</h3>
+            <div class="edu-degree">Electronics and Communication Engineering, B-Tech</div>
+            <div class="edu-location">
+              <i data-lucide="map-pin" style="color: var(--primary-emerald)"></i> Bhimavaram, Andhra Pradesh
+            </div>
+          </div>
+          <div class="edu-timeline-badge">
+            <i data-lucide="calendar"></i> Aug. 2024 – May 2028
+          </div>
+        </div>
+
+        <!-- Education Item 2 -->
+        <div class="glass-card edu-card reveal">
+          <div>
+            <div class="edu-icon-badge"
+              style="background: rgba(255, 183, 3, 0.12); border-color: rgba(255, 183, 3, 0.3); color: var(--accent-gold);">
+              <i data-lucide="book-open"></i>
+            </div>
+            <h3 class="edu-institution">Aditya Junior College</h3>
+            <div class="edu-degree" style="color: var(--accent-gold);">Intermediate (MPC)</div>
+            <div class="edu-location">
+              <i data-lucide="map-pin" style="color: var(--accent-gold)"></i> Palakollu, Andhra Pradesh
+            </div>
+          </div>
+          <div class="edu-timeline-badge"
+            style="background: rgba(0, 255, 157, 0.1); border-color: rgba(0, 255, 157, 0.25); color: var(--primary-emerald);">
+            <i data-lucide="calendar"></i> July 2022 – May 2024
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div style="text-align: center;" class="reveal">
+        <span class="section-tag"><i data-lucide="send"></i> Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-emerald-gold">Me</span></h2>
+        <p class="section-subtitle">Reach out for collaborations, hardware-software projects, or networking</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-cards">
+          <!-- Email Card -->
+          <a href="mailto:rohithc048@gmail.com" class="glass-card contact-card-item reveal"
+            data-copy="rohithc048@gmail.com">
+            <div class="contact-icon">
+              <i data-lucide="mail"></i>
+            </div>
+            <div class="contact-info-text">
+              <h4>Direct Email (Click to Copy)</h4>
+              <p>rohithc048@gmail.com</p>
+            </div>
+          </a>
+
+          <!-- Phone Card -->
+          <a href="tel:8125222620" class="glass-card contact-card-item reveal" data-copy="8125222620">
+            <div class="contact-icon"
+              style="background: rgba(255, 183, 3, 0.1); border-color: rgba(255, 183, 3, 0.25); color: var(--accent-gold);">
+              <i data-lucide="phone"></i>
+            </div>
+            <div class="contact-info-text">
+              <h4>Phone Number</h4>
+              <p>+91 8125222620</p>
+            </div>
+          </a>
+
+          <!-- GitHub Card -->
+          <a href="https://github.com/rohithc048-ctrl" target="_blank" rel="noopener noreferrer"
+            class="glass-card contact-card-item reveal">
+            <div class="contact-icon"
+              style="background: rgba(0, 255, 157, 0.1); border-color: rgba(0, 255, 157, 0.25); color: var(--primary-emerald);">
+              <svg class="brand-icon-svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </div>
+            <div class="contact-info-text">
+              <h4>GitHub Profile</h4>
+              <p>github.com/rohithc048-ctrl</p>
+            </div>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/in/rohith-chintada-80869435a" target="_blank" rel="noopener noreferrer"
+            class="glass-card contact-card-item reveal">
+            <div class="contact-icon"
+              style="background: rgba(56, 189, 248, 0.1); border-color: rgba(56, 189, 248, 0.25); color: #38bdf8;">
+              <svg class="brand-icon-svg" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </div>
+            <div class="contact-info-text">
+              <h4>LinkedIn Profile</h4>
+              <p>linkedin.com/in/rohith-chintada-80869435a</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glass-card contact-form-card reveal">
+          <h3 style="font-size: 1.35rem; margin-bottom: 1.25rem; color: var(--primary-emerald);">
+            Send a Message
+          </h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="form-name">Your Name</label>
+              <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Mercer" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-email">Email Address</label>
+              <input type="email" id="form-email" class="form-input" placeholder="e.g. alex@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-subject">Subject</label>
+              <input type="text" id="form-subject" class="form-input" placeholder="Collaboration / Inquiry">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-message">Message</label>
+              <textarea id="form-message" class="form-textarea" placeholder="Type your message here..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-emerald" style="width: 100%;">
+              <i data-lucide="send"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Official GitHub & LinkedIn Logo Badges -->
+  <footer>
+    <div class="container footer-content">
+      <a href="#hero" class="back-to-top" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+      </a>
+
+      <!-- GitHub & LinkedIn Official Logo Buttons -->
+      <div class="footer-social-bar">
+        <a href="https://github.com/rohithc048-ctrl" target="_blank" rel="noopener noreferrer"
+          class="social-logo-btn github">
+          <svg class="brand-icon-svg" viewBox="0 0 24 24">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/rohith-chintada-80869435a" target="_blank" rel="noopener noreferrer"
+          class="social-logo-btn linkedin">
+          <svg class="brand-icon-svg" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+
+      <p>© 2026 <strong>Chintada Rohith</strong>. All rights reserved.</p>
+      <p style="font-size: 0.82rem; color: var(--text-dim);">
+        B-Tech ECE (Class of 2028) • Vishnu Institute of Technology
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script Initialization -->
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>
